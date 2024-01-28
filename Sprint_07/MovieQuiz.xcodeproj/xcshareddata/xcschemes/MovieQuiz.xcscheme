@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1500"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AD1ABAAD2831907B00B3E448"
+               BuildableName = "MovieQuiz.app"
+               BlueprintName = "MovieQuiz"
+               ReferencedContainer = "container:MovieQuiz.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      shouldAutocreateTestPlan = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D110B3E52B6271BE00993CE5"
+               BuildableName = "MovieQuizTests.xctest"
+               BlueprintName = "MovieQuizTests"
+               ReferencedContainer = "container:MovieQuiz.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D110B44B2B62838C00993CE5"
+               BuildableName = "MovieQuizUITests.xctest"
+               BlueprintName = "MovieQuizUITests"
+               ReferencedContainer = "container:MovieQuiz.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "YES"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D110B4622B65A89A00993CE5"
+               BuildableName = "MovieQuizConvertTest.xctest"
+               BlueprintName = "MovieQuizConvertTest"
+               ReferencedContainer = "container:MovieQuiz.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "YES"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D110B46F2B65A8D700993CE5"
+               BuildableName = "MovieQuizConvertTest @testable import MovieQuiz  final class MovieQuizViewControllerMock: MovieQuizViewControllerProtocol {     func show(quiz step: QuizStepViewModel) {          }          func show(quiz result: QuizResultsViewModel) {          }          func highlightImageBorder(isCorrectAnswer: Bool) {          }          func showLoadingIndicator() {          }          func hideLoadingIndicator() {          }          func showNetworkError(message: String) {          } }  final class MovieQuizPresenterTests: XCTestCase {     func testPresenterConvertModel() throws {         let viewControllerMock = MovieQuizViewControllerMock()         let sut = MovieQuizPresenter(viewController: viewControllerMock)                  let emptyData = Data()         let question = QuizQuestion(image: emptyData, text: &quot;Question Text&quot;, correctAnswer: true)         let viewModel = sut.convert(model: question)                   XCTAssertNotNil(viewModel.image)   "
+               BlueprintName = "MovieQuizConvertTest @testable import MovieQuiz  final class MovieQuizViewControllerMock: MovieQuizViewControllerProtocol {     func show(quiz step: QuizStepViewModel) {          }          func show(quiz result: QuizResultsViewModel) {          }          func highlightImageBorder(isCorrectAnswer: Bool) {          }          func showLoadingIndicator() {          }          func hideLoadingIndicator() {          }          func showNetworkError(message: String) {          } }  final class MovieQuizPresenterTests: XCTestCase {     func testPresenterConvertModel() throws {         let viewControllerMock = MovieQuizViewControllerMock()         let sut = MovieQuizPresenter(viewController: viewControllerMock)                  let emptyData = Data()         let question = QuizQuestion(image: emptyData, text: &quot;Question Text&quot;, correctAnswer: true)         let viewModel = sut.convert(model: question)                   XCTAssertNotNil(viewModel.image)         XCTAssertEqual(viewModel.question, &quot;Question Text&quot;)         XCTAssertEqual(viewModel.questionNumber, &quot;1/10&quot;)     } }"
+               ReferencedContainer = "container:MovieQuiz.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AD1ABAAD2831907B00B3E448"
+            BuildableName = "MovieQuiz.app"
+            BlueprintName = "MovieQuiz"
+            ReferencedContainer = "container:MovieQuiz.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AD1ABAAD2831907B00B3E448"
+            BuildableName = "MovieQuiz.app"
+            BlueprintName = "MovieQuiz"
+            ReferencedContainer = "container:MovieQuiz.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
